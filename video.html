@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Playing Video</title>
+    <link rel="stylesheet" href="./video.css" />
+    
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@200;300&family=Montserrat&display=swap" rel="stylesheet">
+    <link  
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+    
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar">
+        <div class="toggle-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <img src="img/logo.PNG" class="logo" alt="">
+        <div class="search-box">
+            <input type="search" class="search-bar" id="sb" placeholder="search">
+            <button class="search-btn" onclick="getinput()"><img src="img/search.PNG" alt="" ></button>
+            <img src="img/mice.png" id="voice" alt="">
+        </div>
+        <div class="user-options">
+            <img src="img/video.PNG" class="icon" alt="">
+            <img src="img/grid.PNG" class="icon" alt="">
+            <img src="img/bell.PNG" class="icon" alt="">
+            <div class="user-dp">
+                <img src="img/profile-pic.png" alt="">
+            </div>
+        </div>
+      </nav>
+      
+    </div>
+    <section class="root-container">
+      
+      <div>
+          <div id="video-content">
+            
+          </div>
+          <section>
+              <p id="title">
+
+              </p>
+              <div class="video-details">
+
+              </div>
+          </section>
+      </div>
+      <div id="comments-container">
+          <div class="comment">
+              
+          </div>
+
+      </div>
+    </section>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="./video.js"></script>
+  </body>
+</html>

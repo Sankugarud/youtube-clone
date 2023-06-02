@@ -1,0 +1,235 @@
+*{
+    margin: 0 ;
+    background-color: white;
+    font-family: 'Geologica', sans-serif;
+}
+/* navbar */
+.navbar{
+    z-index: 1;   
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0 2.5vw;
+}
+.toggle-btn{
+    width: 20px;
+    height: 10px;
+    position: relative;
+    cursor: pointer;
+}
+.toggle-btn span{
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #979797;
+}
+
+.toggle-btn span:nth-child(1){
+    top: 0;
+}
+
+.toggle-btn span:nth-child(3){
+    top: 100%;
+}
+
+.logo{
+    height: 30px;
+    margin: -10px 30px 0;
+}
+
+.search-box{
+    position: relative;
+    max-width: 700px;
+    width: 70%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar{
+    width: 100%;
+    height: 100%;
+    border: 2px solid #dbdbdb;
+    padding: 0 20px;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.search-btn{
+    display: flex;
+    width: 100px;
+    height: 100%;
+    background: #f0f0f0;
+    border: 2px solid #dbdbdb;
+    padding: 5px 0;
+    border-left: none;
+    justify-content: center;
+}
+
+.search-btn > img{
+    height: 100%;
+    width: 20px;
+}
+#voice{
+    width: 15px;
+    height: 18px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.user-options{
+    height: 35px;
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+
+.user-options .icon{
+    height: 80%;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.user-dp{
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.user-dp img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* navbar end */
+.video-details {
+    color: black ;
+  }
+.root-container {
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    margin: 0px 50px;
+    margin-bottom: 50px;
+  }
+  #comments-container{
+   background-color: #3e3a3a7a;
+    max-height: 100vh;
+    overflow-y: scroll;
+  }
+
+.video-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 800px;
+    background-color: rgba(151, 150, 150, 0.364);
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+}
+.stats {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    background-color: rgb(217,217,217);;
+}
+.like-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    cursor: pointer;
+    background-color: rgb(217,217,217);
+}
+.like {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    background-color: rgb(217,217,217);
+}
+.like .material-icons{
+    background-color: rgb(217,217,217);
+}
+.comments-container{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: rgb(217,217,217);
+}
+
+.owner-details{
+    display: flex;
+    flex-direction: column;
+    color: rgb(17, 12, 12);
+    background-color: rgb(217,217,217);
+}
+
+.profile{
+    display: flex;
+    gap: 20px;
+    background-color: rgb(217,217,217);
+    color: black;
+}
+.llike{
+    background-color: rgb(217,217,217);
+}
+.profile > img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+#title {
+    margin: 20px;
+    color: black;
+}
+
+.comment {
+    display: flex;
+    gap: 20px;
+    color: rgb(22, 17, 17) ;
+    padding: 20px;
+}
+.comment > img, .comment-reply > img {
+    width: 40px;
+    height: 40px; 
+    border-radius: 50%;
+}
+.comment-right-half{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.comment span {
+    font-size: 14px !important;
+    color: rgb(27, 21, 21)
+}
+.comment p {
+    color: rgb(19, 16, 16) ;
+    width: 100%;
+}
+.options {
+    display: flex; 
+    gap: 20px;
+    cursor: pointer;
+}
+.reply{
+    background-color: transparent;
+    color: black ;
+    border: none ;
+    cursor: pointer;
+}
+.reply:hover {
+    color: rgb(233, 223, 223) ;
+}
+.comment-reply{
+    padding-left: 10px;
+    color: black;
+}
